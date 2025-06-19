@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Learn Python | Python Codex</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
+
+
+  <meta name="description" content="Learn Python 3 with tutorials, examples, projects, and blog updates at Python Codex." />
+<meta name="keywords" content="Python, Python 3, learn Python, Python tutorials, Python examples, coding, programming" />
+<meta name="author" content="Python Codex" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <header>
+    <h1>Python Codex</h1>
+    <p>Learn Python 3 – Step by Step</p>
+  </header>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Learn Python</a>
+    <a href="../examples/index.html">Examples</a>
+    <a href="../projects/index.html">Projects</a>
+    <a href="../blog/index.html">Blog</a>
+    <a href="../contact/index.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h2>Welcome to Python 3 Learning</h2>
+    <p>Python is a powerful, easy-to-learn language. These lessons will guide you through the basics and build a strong foundation.</p>
+
+    <h2>Lesson 1: Your First Python Code</h2>
+    <p>Starting with the famous “Hello, World!” program. It's the simplest way to run Python code.</p>
+    <pre><code class="language-python">print("Hello, world!")</code></pre>
+    <p>Try changing the text inside the quotes and run it again.</p>
+
+    <h2>Lesson 2: Variables</h2>
+    <p>Variables hold data. You can store text, numbers, and more.</p>
+    <pre><code class="language-python">name = "Alice"
+age = 25
+print(name)
+print(age)</code></pre>
+
+    <h2>Lesson 3: Comments</h2>
+    <p>Comments help explain your code and are ignored by Python.</p>
+    <pre><code class="language-python"># This is a comment
+print("This will run")</code></pre>
+
+    <h2>Lesson 4: Data Types</h2>
+    <p>Python has different data types to store different kinds of data.</p>
+    <pre><code class="language-python">x = 10        # int
+pi = 3.14      # float
+name = "Bob"   # str
+is_active = True  # bool
+numbers = [1, 2, 3]  # list
+</code></pre>
+
+    <h2>Lesson 5: If / Else Statements</h2>
+    <p>Control your program flow by making decisions.</p>
+    <pre><code class="language-python">age = 20
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")</code></pre>
+
+    <h2>Lesson 6: Loops</h2>
+    <p>Repeat tasks efficiently with loops.</p>
+    <pre><code class="language-python"># For loop
+for i in range(5):
+    print(i)
+
+# While loop
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+</code></pre>
+
+    <h2>Lesson 7: Functions</h2>
+    <p>Functions let you reuse code and organize your program.</p>
+    <pre><code class="language-python">def greet(name):
+    print(f"Hello, {name}!")
+
+greet("Alice")
+greet("Bob")</code></pre>
+
+    <h2>Lesson 8: Lists and List Methods</h2>
+    <p>Lists store multiple items and have useful methods.</p>
+    <pre><code class="language-python">fruits = ["apple", "banana", "cherry"]
+print(fruits)
+fruits.append("orange")  # add item
+print(fruits)
+print(fruits[1])  # banana</code></pre>
+
+    <h2>Lesson 9: Dictionaries</h2>
+    <p>Dictionaries store key-value pairs for fast lookup.</p>
+    <pre><code class="language-python">person = {"name": "Alice", "age": 30}
+print(person)
+print(person["name"])  # Alice
+person["age"] = 31  # update value</code></pre>
+
+    <h2>Lesson 10: Tuples and Sets</h2>
+    <p>Tuples are immutable lists, sets store unique items.</p>
+    <pre><code class="language-python">point = (10, 20)  # tuple
+print(point)
+
+unique_numbers = {1, 2, 2, 3}
+print(unique_numbers)  # {1, 2, 3}</code></pre>
+
+    <h2>Lesson 11: User Input</h2>
+    <p>Get input from the user during program execution.</p>
+    <pre><code class="language-python">name = input("Enter your name: ")
+print(f"Hello, {name}!")</code></pre>
+
+    <h2>Lesson 12: Exception Handling</h2>
+    <p>Handle errors gracefully to prevent crashes.</p>
+    <pre><code class="language-python">try:
+    x = int(input("Enter a number: "))
+    print(10 / x)
+except ZeroDivisionError:
+    print("Cannot divide by zero.")
+except ValueError:
+    print("Invalid input.")</code></pre>
+
+    <h2>Lesson 13: Modules and Imports</h2>
+    <p>Use external code libraries with import statements.</p>
+    <pre><code class="language-python">import math
+print(math.sqrt(16))</code></pre>
+
+    <h2>Lesson 14: File I/O Basics</h2>
+    <p>Read from and write to files to store data.</p>
+    <pre><code class="language-python"># Write to a file
+with open("test.txt", "w") as file:
+    file.write("Hello, file!")
+
+# Read from a file
+with open("test.txt", "r") as file:
+    content = file.read()
+    print(content)</code></pre>
+
+    <h2>Lesson 15: List Comprehensions</h2>
+<p>A concise way to create lists:</p>
+<pre><code class="language-python">squares = [x**2 for x in range(10)]
+print(squares)</code></pre>
+
+<h2>Lesson 16: Lambda Functions</h2>
+<p>Anonymous, short functions:</p>
+<pre><code class="language-python">add = lambda a, b: a + b
+print(add(5, 3))  # 8</code></pre>
+
+<h2>Lesson 17: Classes and Objects</h2>
+<p>Object-oriented programming basics:</p>
+<pre><code class="language-python">class Dog:
+    def __init__(self, name):
+        self.name = name
+
+    def bark(self):
+        print(f"{self.name} says Woof!")
+
+my_dog = Dog("Rex")
+my_dog.bark()</code></pre>
+
+<h2>Lesson 18: Decorators (Intro)</h2>
+<p>Modify functions easily:</p>
+<pre><code class="language-python">def decorator(func):
+    def wrapper():
+        print("Before function")
+        func()
+        print("After function")
+    return wrapper
+
+@decorator
+def say_hello():
+    print("Hello!")
+
+say_hello()</code></pre>
+
+<h2>Lesson 19: Generators</h2>
+<p>Functions that yield values lazily:</p>
+<pre><code class="language-python">def count_up_to(n):
+    count = 1
+    while count <= n:
+        yield count
+        count += 1
+
+for number in count_up_to(5):
+    print(number)</code></pre>
+
+<h2>Lesson 20: Useful Built-in Functions</h2>
+<p>Python includes many handy built-ins:</p>
+<ul>
+  <li><code>len()</code> - length of an object</li>
+  <li><code>range()</code> - generate number sequences</li>
+  <li><code>type()</code> - check variable type</li>
+  <li><code>isinstance()</code> - check class membership</li>
+  <li><code>enumerate()</code> - get index and value when looping</li>
+</ul>
+
+<h2>Lesson 21: Virtual Environments (Best Practice)</h2>
+<p>Keep project dependencies isolated:</p>
+<pre><code class="language-bash">python3 -m venv myenv
+source myenv/bin/activate  # On Windows: myenv\Scripts\activate
+pip install package_name
+deactivate</code></pre>
+
+<p>Using virtual environments helps avoid package conflicts between projects.</p>
+
+
+    <hr />
+    <p>Ready for more? Check out our <a href="../examples/index.html">Examples</a> page to see these concepts in action.</p>
+
+
+  </div>
+
+  <footer>
+    &copy; 2025 Python Codex. All rights reserved.
+  </footer>
+</body>
+</html>
+
