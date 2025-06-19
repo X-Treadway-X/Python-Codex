@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Examples | Python Codex</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <!-- Prism.js for syntax highlighting -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
+
+  <meta name="description" content="Learn Python 3 with tutorials, examples, projects, and blog updates at Python Codex." />
+<meta name="keywords" content="Python, Python 3, learn Python, Python tutorials, Python examples, coding, programming" />
+<meta name="author" content="Python Codex" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <header>
+    <h1>Python Codex</h1>
+    <p>Python Code Examples</p>
+  </header>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../learn/index.html">Learn Python</a>
+    <a href="index.html">Examples</a>
+    <a href="../projects/index.html">Projects</a>
+    <a href="../blog/index.html">Blog</a>
+    <a href="../contact/index.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h2>Example 1: Hello World</h2>
+    <pre><code class="language-python">print("Hello, world!")</code></pre>
+    <p>Try it yourself:  
+      <a href="https://replit.com/languages/python3?code=print%28%22Hello%2C%20world%21%22%29" target="_blank" rel="noopener">Run on Replit</a>
+    </p>
+
+    <h2>Example 2: Simple Calculator Function</h2>
+    <pre><code class="language-python">def add(a, b):
+    return a + b
+
+print(add(3, 5))</code></pre>
+    <p>Try it yourself:  
+      <a href="https://replit.com/languages/python3?code=def%20add%28a%2C%20b%29%3A%0A%20%20%20%20return%20a%20%2B%20b%0A%0Aprint%28add%283%2C%205%29%29" target="_blank" rel="noopener">Run on Replit</a>
+    </p>
+
+    <h2>Example 3: For Loop</h2>
+    <pre><code class="language-python">for i in range(5):
+    print(i)</code></pre>
+    <p>Try it yourself:  
+      <a href="https://replit.com/languages/python3?code=for%20i%20in%20range%285%29%3A%0A%20%20%20%20print%28i%29" target="_blank" rel="noopener">Run on Replit</a>
+    </p>
+
+    <h2>Example 4: List Comprehensions</h2>
+    <pre><code class="language-python">squares = [x**2 for x in range(10)]
+print(squares)</code></pre>
+    <p>Try it yourself:  
+      <a href="https://replit.com/languages/python3?code=squares%20%3D%20%5Bx**2%20for%20x%20in%20range%2810%29%5D%0Aprint%28squares%29" target="_blank" rel="noopener">Run on Replit</a>
+    </p>
+
+    <h2>Example 5: Dictionary Usage</h2>
+    <pre><code class="language-python">person = {"name": "Alice", "age": 30}
+print(person["name"])
+person["age"] = 31
+print(person)</code></pre>
+    <p>Try it yourself:  
+      <a href="https://replit.com/languages/python3?code=person%20%3D%20%7B%22name%22%3A%20%22Alice%22%2C%20%22age%22%3A%2030%7D%0Aprint%28person%5B%22name%22%5D%29%0Aperson%5B%22age%22%5D%20%3D%2031%0Aprint%28person%29" target="_blank" rel="noopener">Run on Replit</a>
+    </p>
+
+    <h2>Example 6: Basic Class and Object</h2>
+    <pre><code class="language-python">class Dog:
+    def __init__(self, name):
+        self.name = name
+
+    def bark(self):
+        print(f"{self.name} says Woof!")
+
+dog = Dog("Rex")
+dog.bark()</code></pre>
+    <p>Try it yourself:  
+      <a href="https://replit.com/languages/python3?code=class%20Dog%3A%0A%20%20%20%20def%20__init__%28self%2C%20name%29%3A%0A%20%20%20%20%20%20%20%20self.name%20%3D%20name%0A%0A%20%20%20%20def%20bark%28self%29%3A%0A%20%20%20%20%20%20%20%20print%28f%22%7Bself.name%7D%20says%20Woof!%22%29%0A%0Adog%20%3D%20Dog%28%22Rex%22%29%0Adog.bark%28%29" target="_blank" rel="noopener">Run on Replit</a>
+    </p>
+
+    <h2>Example 7: Handling Exceptions</h2>
+    <pre><code class="language-python">try:
+    x = int(input("Enter a number: "))
+    print(10 / x)
+except ZeroDivisionError:
+    print("Cannot divide by zero.")
+except ValueError:
+    print("Invalid input.")</code></pre>
+    <p>Try it yourself (note: input requires console):  
+      <a href="https://replit.com/languages/python3?code=try%3A%0A%20%20%20%20x%20%3D%20int%28input%28%22Enter%20a%20number%3A%20%22%29%29%0A%20%20%20%20print%2810%20%2F%20x%29%0Aexcept%20ZeroDivisionError%3A%0A%20%20%20%20print%28%22Cannot%20divide%20by%20zero.%22%29%0Aexcept%20ValueError%3A%0A%20%20%20%20print%28%22Invalid%20input.%22%29" target="_blank" rel="noopener">Run on Replit</a>
+    </p>
+
+    <h2>Example 8: Reading from a File</h2>
+    <pre><code class="language-python">with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)</code></pre>
+    <p>Try it yourself (add a file named example.txt):  
+      <a href="https://replit.com/languages/python3" target="_blank" rel="noopener">Run on Replit</a>
+    </p>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Python Codex. All rights reserved.
+  </footer>
+</body>
+</html>
+
+
